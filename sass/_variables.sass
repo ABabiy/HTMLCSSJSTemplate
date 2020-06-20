@@ -1,0 +1,30 @@
+$black: #000
+$white: #fff
+
+$primary: #252525
+$second: #e5493a
+$thirty: #8dc63f
+$yellow-color: #ff8a00
+$green-color: #76be71
+$bg-grey: #f4f4f4
+
+$colorText: #333237
+$colorText2: #252525
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
+// // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
+// // Default variables: node_modules/bootstrap/scss/_variables.scss
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1360px)
+$container-max-widths: (sm: 540px, md: 720px, lg: 940px, xl: 1110px, xxl: 1290px)
+
+$container-sm-half: (map-get($container-max-widths, sm) / 2)
+$container-md-half: (map-get($container-max-widths, md) / 2)
+$container-lg-half: (map-get($container-max-widths, lg) / 2)
+$container-xl-half: (map-get($container-max-widths, xl) / 2)
+$container-xxl-half: (map-get($container-max-widths, xxl) / 2)

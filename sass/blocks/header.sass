@@ -1,0 +1,149 @@
+//@import "../variables"
+
+.header
+	//display: none
+	padding: 30px 0
+	position: fixed
+	width: 100%
+	z-index: 1000
+	background: #F4F4F4
+	//transition: .3s
+	transition: background-color .2s linear
+	//background: red
+
+	+media-breakpoint-down(sm)
+		//padding: 20px 0
+
+	&__menu
+		display: flex
+		align-items: center
+
+		margin-right: 20px
+
+		//width: 100px
+
+		font-weight: normal
+		font-size: 12px
+		line-height: 100%
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		color: #333237
+		transition: 0.3s
+
+		&-l
+			display: none
+			min-width: 90px
+
+			+media-breakpoint-down(xl)
+				display: flex
+
+		&-r
+			display: flex
+
+			margin-right: 0
+			margin-left: 20px
+
+			+media-breakpoint-down(xl)
+				display: none
+
+		&:hover
+			text-decoration: none
+			font-weight: 600
+
+	&__logo
+
+		+media-breakpoint-down(sm)
+			display: none
+
+	&__logo-1
+		display: none
+		height: 30px
+		margin-left: 10px
+
+		+media-breakpoint-down(sm)
+			display: inline-block
+			margin-left: 0
+			width: 100%
+
+	&__menu-img
+		margin-right: 10px
+
+		width: 23px
+		height: 16px
+
+	&__link-l
+
+		+media-breakpoint-down(sm)
+			display: inline-block
+			//margin-bottom: 10px
+
+	&__forecast-img
+		width: 40px
+		//box-shadow: 0 10px 30px rgba(118, 190, 113, 0.3)
+
+	&__link-p
+		position: relative
+		width: 40px
+		height: 40px
+
+		color: $white
+		text-align: center
+		line-height: 43px
+		font-size: 26px
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #76BE71
+		border-radius: 12px
+		box-shadow: 0 10px 30px rgba(118, 190, 113, 0.8)
+		transition: 0.3s
+
+		&:after
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0
+
+			width: 40px
+			height: 40px
+
+			background: #58A053
+			border-radius: 16px
+			z-index: -1
+
+		&:hover
+			color: $white
+			text-decoration: none
+			box-shadow: none
+
+	&__desc
+		margin-right: 10px
+		flex: 0 0 227px
+		width: 227px
+		font-weight: 300
+		font-size: 14px
+		line-height: 1.6
+
+		+media-breakpoint-down(md)
+			display: none
+
+	&__phone
+		display: inline-block
+		white-space: nowrap
+
+		font-weight: 300
+		font-size: 20px
+		line-height: 100%
+		text-align: right
+		color: #333237
+
+		+media-breakpoint-down(sm)
+			font-size: 16px
+
+		span
+			font-weight: 600
+
+		&.top-line
+			+media-breakpoint-down(md)
+				display: none
+
+svg
+	min-width: 100px
+
